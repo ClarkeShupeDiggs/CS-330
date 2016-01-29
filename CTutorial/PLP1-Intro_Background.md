@@ -13,7 +13,7 @@ C was developed by Dennis Ritchie and Ken Thompson at Bell Labs between 1969-197
 C is commonly used to program operating and embedded systems, due to its portability and low-level associations with memory. It is also used in many compilers and interpreters of other languages, and even as an intermediate language in specific instances. 
 
 The most popular Github.com projects related to C are:
-1.
+1. A DYI Operating System Guide https://github.com/SamyPesse/How-to-Make-a-Computer-Operating-System
 2.
 3.
 
