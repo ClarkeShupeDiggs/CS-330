@@ -22,4 +22,10 @@ The most popular Github.com projects related to C are:
 
 # Resources
 
+My primary resources for this project will be "'C' Programming: 1st edition", the GNU C Library: https://www.gnu.org/software/libc/manual/html_mono/libc.html, and http://computer.howstuffworks.com/c.htm. StackOverflow.com may also be used on a case-by-case basis!
+
 # Sources
+
+Amdani, Salim Y. "'C' Programming: 1st Edition" University Science Press/Laxmi Publications Pvt. Ltd., c2009.
+
+Wikipedia.org https://en.wikipedia.org/wiki/C_(programming_language) Accessed Jan. 26, 2016.
