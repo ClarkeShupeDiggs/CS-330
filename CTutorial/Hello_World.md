@@ -24,8 +24,8 @@ C programs can range from the simple to the complex, but the basic requirements 
         - This line of code tells the compiler to include the standard C library of input and output functions in the                  program's operations
   2. main(){
   
-        - The instructions, with the exception of inline comments, to be executed by the compiler must 
-          reside between the curly braces { } of the main() function.
+        - Instructions to be executed by the compiler must reside between the curly brackets { }
+          of the main() function, with the exception of inline comments.
         - There can only be one main() per program.
   3. /* This is an example of a comment */           
         - Comments are statements that will not be executed by the compiler;
