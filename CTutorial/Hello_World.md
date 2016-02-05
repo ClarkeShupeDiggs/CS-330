@@ -19,22 +19,40 @@ Regardless of which OS you are using, if you do not want to be restricted to pro
 
 # Programming with C
 
-C programs can range from the simple to the complex, but the basic requirements for every program are as follows:
-  1. #include \<stdio.h\>                                   
-        - This line of code tells the compiler to include the standard C library of input and output functions in the                  program's operations
-  2. main(){
-  
-        - Instructions to be executed by the compiler must reside between the curly brackets { }
-          of the main() function, with the exception of inline comments
-        - There can only be one main() per program
-  3. /* This is an example of a comment */           
-        - Comments are statements that will not be executed by the compiler
-  4. printf("Hello, World!");
-        - This is a sample instruction, which will print the String "Hello, World!" on the screen
-  5. }
-        - Always remember to enclose main() and/or any other function with the appropriate closing bracket
+## A Simple Program
 
+C programs can range from the simple to the complex, but the basic requirements for every program are as follows:
+ ```
+ #include \<stdio.h\>
+        /* This is an example of a comment */
+        /* Comments are statements that will not be executed by the compiler */
+        /* This line of code tells the compiler to include the standard C library 
+           of input and output functions in the program's operations */
+  ```
+  ```
+  main(){
+        /* Instructions to be executed by the compiler must reside between a pair of curly 
+           brackets { } following the main() function, with the exception of inline comments */
+        /* There can only be one main() per program */
+   
+        printf("Hello, World!");
+            /* This is a sample instruction, which will display the String "Hello, World!" 
+               across the console */
+            /* Because all instructions must be statements, each instruction must be 
+               punctuated by a semicolon (;) */
+  }
+        /* Always remember to enclose main() and/or any other function with the 
+           appropriate closing bracket */
+  ```
+  
+## C is a Compiled Language
+
+The filename of this sample program is hello_world.c -- all C programs must be saved with the (.c) file extension or they will not compile! Once you have saved your program, you can run the program from either terminal/command line or your IDE's GUI. 
+
+Although you may or may not have to manually compile your program, depending on your programming environment, C is a compiled language and therefore must be compiled before it is run. Barring any syntax errors or other problems that may interfere with the compilation process, your machine will always compile the program prior to execution). 
 
 # Sources
+
+
 
 
