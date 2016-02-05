@@ -53,6 +53,9 @@ Although you may or may not have to manually compile your program, depending on 
 
 # Sources
 
+Amdani, Salim Y. "'C' Programming: 1st Edition" University Science Press/Laxmi Publications Pvt. Ltd., c2009.
+
+Wikipedia.org https://en.wikipedia.org/wiki/C_(programming_language) Accessed Feb. 02, 2016.
 
 
 
