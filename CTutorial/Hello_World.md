@@ -25,13 +25,14 @@ C programs can range from the simple to the complex, but the basic requirements 
   2. main(){
   
         - Instructions to be executed by the compiler must reside between the curly brackets { }
-          of the main() function, with the exception of inline comments.
-        - There can only be one main() per program.
+          of the main() function, with the exception of inline comments
+        - There can only be one main() per program
   3. /* This is an example of a comment */           
-        - Comments are statements that will not be executed by the compiler;
+        - Comments are statements that will not be executed by the compiler
   4. printf("Hello, World!");
-        - 
+        - This is a sample instruction, which will print the String "Hello, World!" on the screen
   5. }
+        - Always remember to enclose main() and/or any other function with the appropriate closing bracket
 
 
 # Sources
