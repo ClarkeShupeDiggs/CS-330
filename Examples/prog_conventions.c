@@ -6,7 +6,7 @@
 int main(void)
 {
 	// Numeric integer
-    int num = 5;
+    	int num = 5;
 	// Numeric decimal
 	float dec = 8.9;
 	// Boolean value
