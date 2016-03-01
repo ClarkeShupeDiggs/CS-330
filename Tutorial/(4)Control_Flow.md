@@ -82,7 +82,7 @@ An example of the for-loop:
 ```c
 for(int i=0; i<5; i++){		// i is incremented and its condition tested every time the loop executes
 	int add = x + y + z;
-	printf("%d ",add);	// Output: 11 29 32 35 38
+	printf("%d ",add);		// Output: 11 29 32 35 38
 	x++;
 	y = x - 3;
 	z = 2 + y;
@@ -106,7 +106,7 @@ switch (input){
 	case 4:
 		printf("Four!\n");
 		break;
-	case 5:					// input = 5
+	case 5:						// input = 5
 		printf("Five!\n");		// Output: "Five!"	 
 		break;		
 }
@@ -120,7 +120,7 @@ for(int i=1; i<6; i++){
 	if(i>=5){			// When i = 5, the program will disregard the second print statement
 		continue;		// and execute the statement(s) above the continue statement once more 
 	}
-	printf(", ");			// Output: 1, 2, 3, 4, 5
+	printf(", ");		// Output: 1, 2, 3, 4, 5
 }
 ```
 
