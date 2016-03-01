@@ -10,7 +10,7 @@ An example of the if-else statement:
 
 ```c
 int x = 10;
-if(x%2 == 0) 					// The remainder of 10 modulo 2 is 0, thus the condition is true	
+if(x%2 == 0) 							// 10 modulo 2 is 0, thus the condition is true
 	printf(" is an even number.\n");	// Output: "10 is an even number."	
 }else{
 	printf(" is not even.\n");
@@ -22,10 +22,11 @@ if(x%2 == 0) 					// The remainder of 10 modulo 2 is 0, thus the condition is tr
 There need not be strictly one condition evaluated at one time. C supports short-circuit logic, in which the statement preceding a control operator (&&, ||, and ?) is evaluated to be true or false before, and optionally in addition to, the statement to the right of the operator. An example of the multi-condition if-statement:
 
 ```c
+int x = 10;
 if(x%2==1 && (x*6)%5==0){
 	printf(" is not even, but it IS divisible by 5.\n");
-}else if(x!=4){							// The first condition is false, but 10 != 4 is true
-	printf(" does not equal 4.\n");				// Output: "10 does not equal 4."
+}else if(x!=4){								// The first condition is false, but 10 != 4 is true
+	printf(" does not equal 4.\n");			// Output: "10 does not equal 4."
 }else{
 	printf(" is a integer.\n");
 }
@@ -50,10 +51,10 @@ int y = 3;
 char string1[] = "How much wood could a woodchuck chuck\n";
 char string2[] = "if a woodchuck could chuck wood?\n";
 
-while(y>1){				// First time around the loop: y = 3, so y>1 is true
+while(y>1){						// First time around the loop: y = 3, so y>1 is true
 	printf(string1,"\n");		// Second time around the loop: y = 2, so y>1 is true
 	printf(string2,"\n");		// Third time around the loop: y = 1, so y>1 is false
-	y--;				// Output: string1 and string2 will be printed twice
+	y--;						// Output: string1 and string2 will be printed twice
 }
 ```
 
@@ -66,10 +67,10 @@ An example of the do-while loop:
 ```c
 int z = 0;
 do{
-	printf("A long time ago...\n");			// This code is executed at least once
-}while(z>0);						// before the loop's condition is evaluated
+	printf("A long time ago...\n");				// This code is executed at least once
+}while(z>0);									// before the loop's condition is evaluated
 	printf("in a galaxy far, far away...\n");	// Output: "Once upon a time ago...
-								    in a galaxy far, far away..."
+												//	    in a galaxy far, far away..."
 ```
 
 ### The for Loop
