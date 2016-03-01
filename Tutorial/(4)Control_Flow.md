@@ -73,8 +73,8 @@ for(int i=0; i<5; i++){			// i is incremented and evaluated every time the loop 
 
 ## Switch Statements
 
-
 ```c
+int input = 5;
 switch (input){
 	case 1:
 		printf("One!\n");
@@ -88,14 +88,23 @@ switch (input){
 	case 4:
 		printf("Four!\n");
 		break;
-	case 5:
-		printf("Five!\n");
+	case 5:					// input = 5
+		printf("Five!\n");		// Output: "Five!"	 
 		break;		
 }
 ```
 
 ## Continue and Break Statements
 
+```c
+for(int i=1; i<6; i++){
+	printf("%d", i);
+	if(i>=5){			// When i = 5, the program will disregard the second print statement
+		continue;		// and execute the statement(s) above the continue statement once more 
+	}
+	printf(", ");			// Output: 1, 2, 3, 4, 5
+}
+```
 
 ## Sources
 
