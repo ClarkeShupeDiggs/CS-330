@@ -9,10 +9,10 @@ Perhaps the simplest type of control statement is the family of if, if-else, and
 ```c
   int x = 10;
   if(x%2 == 0){                           // The output of this statement will be: "10 is an even number."
-		printf(" is an even number.\n");      // because the remainder of 10 modulo 2 is 0, thus the condition is true
-	}else{
-		printf(" is not even.\n");
-	}
+	printf(" is an even number.\n"); // because the remainder of 10 modulo 2 is 0, thus the condition is true
+   }else{
+	printf(" is not even.\n");
+   }
 ```
 
 
