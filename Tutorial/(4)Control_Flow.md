@@ -4,7 +4,7 @@ The order in which statements in a program execute can vary greatly. Most progra
 
 ## Conditional Statements
 
-Perhaps the simplest type of control statement supported by C is the family of if, if-else, and if-else if-else statements.
+Perhaps the simplest type of control statement supported by C is the family of if, if-else, and else-if statements (more commonly known as conditional statements). If-statements alter the flow of program control by evaluating a condition before executing any code between their associate braces. If the condition is true, the code between the braces will be executed. If the condition is false, the next statement (if, else-if, else, or any other kind) beyond the scope of its braces will be considered for execution. 
 
 An example of the if-else statement:
 
@@ -16,7 +16,10 @@ if(x%2 == 0) 					// The remainder of 10 modulo 2 is 0, thus the condition is tr
 	printf(" is not even.\n");
 }
 ```
-An example of the else-if statement:
+
+## Short-Circuit Evaluation
+
+There need not be strictly one condition evaluated at one time. C supports short-circuit logic, in which the statement preceding a control operator (&&, ||, and ?) is evaluated to be true or false before, and optionally in addition to, the statement to the right of the operator. An example of the multi-condition if-statement:
 
 ```c
 if(x%2==1 && (x*6)%5==0){
@@ -26,15 +29,21 @@ if(x%2==1 && (x*6)%5==0){
 }else{
 	printf(" is a integer.\n");
 }
-````
+```
 
-## Short-Circuit Evaluation
+## The Dangling -else
+
+In order to avoid dangling else-statements--else statements that are ambiguously defined--C automatically associates an else statement with its nearest if-statement prior to evaluation. 
 
 ## Loops
 
-C supports while, do-while, and for-loops in order to quickly complete repetitive tasks.
+C supports while, do-while, and for-loops in order to quickly execute repetitive tasks.
 
 ### The while Loop
+
+While loops function by evaluating a condition before executing a block of code. If the condition is true, one cycle of the loop will execute before testing the condition once more. If the condition is false, the loop terminates execution.
+
+An example of the while-loop:
 
 ```c
 int y = 3;
@@ -50,6 +59,10 @@ while(y>1){				// First time around the loop: y = 3, so y>1 is true
 
 ### The do-while Loop
 
+The do-while loop differs from the while loop in that it will execute its code block at least once before evaluating its condition. If the condition is true, the loop will continue to execute. If the condition is false, the loop will terminate.
+
+An example of the do-while loop:
+
 ```c
 int z = 0;
 do{
@@ -61,10 +74,14 @@ do{
 
 ### The for Loop
 
+For loops differ from while and do-while loops in that they have a built-in exit-variable. The loop condition, evaluated at the beginning of every loop, is composed of three parts: the exit-variable initialization, the exit-variable condition, and the exit-variable update statement.
+
+An example of the for-loop:
+
 ```c
-for(int i=0; i<5; i++){			// i is incremented and evaluated every time the loop executes
+for(int i=0; i<5; i++){		// i is incremented and its condition tested every time the loop executes
 	int add = x + y + z;
-	printf("%d ",add);		// Output: 11 29 32 35 38
+	printf("%d ",add);	// Output: 11 29 32 35 38
 	x++;
 	y = x - 3;
 	z = 2 + y;
