@@ -66,15 +66,15 @@ void add(int one, int two){
 ```
 
 ###Recursion
-
+C supports the use of recursive functions, that is, functions that call themselves in order to complete repetitive tasks:
 ```c
 void count(int c){
 	printf("%d",c);
 	printf(" ");
 	
-	if(c<5){
-		count(c+1);
-	}
+	if(c<5){			// Starting with some integer c that is less than 5,
+		count(c+1);		// this function will increment c continually until
+	}				// c is greater than or equal to 5
 }
 ```
 
