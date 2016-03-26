@@ -170,9 +170,9 @@ Despite this default setting, C programmers can just as easily modify their code
 C 
 Variables in C programs, much like C functions, are (by default) assigned by value. For example, in the following code the variable a is initialized with one value, and then re-assigned with the value of a second variable b:
 ```c
-int a = 2;		// integer a contains the value 2
+int a = 2;			// integer a contains the value 2
 int b = 5;
-a = b;			// integer a now contains the value 5
+a = b;				// integer a now contains the value 5
 printf("%d",a);		// Output: 5
 ```
 Another example of assign-by-value in C is as follows:
