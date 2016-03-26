@@ -87,8 +87,8 @@ Functions written in C may only return one value at a time. The data type of thi
 Though C functions can only return a single value, they may accept multiple parameters of variable type as input. 
 ```c
 void parameters(int v, char w[], float p){		// This function accepts 3 parameters:
-	printf("%d",v);									// an integer
-	printf(" %s",w);								// an array of characters
+	printf("%d",v);									// an integer,
+	printf(" %s",w);								// an array of characters,
 	printf(" %1.1f",p);								// and a floating-point number
 }
 ```
