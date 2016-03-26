@@ -7,7 +7,7 @@
 Functions in C are comprised of a function declaration (establishing the return type, name, and parameters of a function) followed by its definition (containing the function's body of code).
 
 ```c
-void add(int one, int two){     // <return type: void> <name: add>(parameters: int one, int two) <-- declaration
+void add(int one, int two){           // <return type: void> <name: add>(parameters: int one, int two) <-- declaration
 	int result = one + two;       // body
 	printf("%d",result);          // body     <-- definition
 	printf("\n");                 // body 
