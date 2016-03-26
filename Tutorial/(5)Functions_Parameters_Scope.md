@@ -125,11 +125,32 @@ int main(void){
 }
 ```
 The previous examples illustrate the fact that local variables x and a are declared and initialized in two separate instances (x = 2 and a = 3 in main(), x = 5 in the for-loop and a = 6 in multiply()). Therefore, variables x and a in main() are references to values stores in separate spaces in memory than variables x and a in the for-loop and in multiply().
+
 ###Global
+Variables that are declared outside of main() are known as global variables. Global variables are visible to every function in a C program, including main(). For example, in the following code the for-loop that is used by the display() function to print the values of a two-dimensional array could just as easily be placed in main(), and result in the same output:
+```c
+#define rows 2
+#define cols 3
+int two_d_array[rows][cols] = {{1,2,3},{4,5,6}};
 
-###Pass by Value (Default)
+void display(){
+	printf("\n");
+	for(int i=0; i<rows; i++){
+		for(int j=0; j<cols; j++){
+			printf("%d ", two_d_array[i][j]);
+		}
+		printf("\n");
+	}
+}
 
-###Pass by Reference
+int main(void){			// Output: 1 2 3
+	display();			   4 5 6
+}
+
+```
+NOTE: In a C program, local variables of the same name as global variables will take precendence. 
+###Pass-by-Value & Pass-by-Reference
+As mentioned previously, the result of manipulating a variable's value within a function in a C program will depend on both the variable's scope and that of the function. However, when passing one or more arguments to a function, C allows the programmers to pass these arguments by value or by reference. By defualt, C programs pass arguments to functions by value: the values of the arguments are copied and then sent to the function; any changes to the arguments within the body of the function will not alter their orginal values (outside of the function in question). Despite this default setting, C programmers can just as easily modify their code to pass arguments by reference: the memory addresses of arguments (for example: int x, int y, and int z) are copied and sent then sent to the function (with the following parameter-list syntax: int *x, int *y, int *z); any changes to the arguments within the body of the function will directly alter the values of the variables in memory. 
 
 ###Variable Assignment
 
