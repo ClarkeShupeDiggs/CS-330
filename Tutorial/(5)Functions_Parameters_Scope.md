@@ -75,7 +75,7 @@ void count(int c){
 	
 	if(c<5){			// Starting with some integer c that is less than 5,
 		count(c+1);		// this function will increment c continually until
-	}				// c is greater than or equal to 5
+	}					// c is greater than or equal to 5
 }
 ```
 
