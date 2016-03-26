@@ -108,7 +108,7 @@ for(int i=0; i<3; i++){
 		printf("Value of x: %d", x);			// Output: Value of x: 4
 	}
 }
-								// main()'s x still holds the value 2
+									// main()'s x still holds the value 2
 printf("\nValue of x: %d", x);					// Output: Value of x: 2
 printf("\n");
 ```
