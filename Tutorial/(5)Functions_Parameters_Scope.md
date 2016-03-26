@@ -121,7 +121,7 @@ int multiply(int b){
 
 int main(void){
 	int a = 3;					// main()'s a is an integer of value 3 (so, a * 2 = 6)
-	printf("\na = %d", a);						// Output: a = 3
+	printf("\na = %d", a);					// Output: a = 3
 	printf("\na * 2 = %d", multiply(a));				// Output: a * 2 = 12
 }
 ```
