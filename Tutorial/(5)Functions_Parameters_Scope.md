@@ -144,7 +144,7 @@ void display(){
 }
 
 int main(void){			// Output: 1 2 3
-	display();			//	   4 5 6
+	display();			//		   4 5 6
 }
 
 ```
