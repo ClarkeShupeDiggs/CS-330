@@ -148,11 +148,26 @@ int main(void){			// Output: 1 2 3
 }
 
 ```
-NOTE: In a C program, local variables of the same name as global variables will take precendence. 
-###Pass-by-Value & Pass-by-Reference
-As mentioned previously, the result of manipulating a variable's value within a function in a C program will depend on both the variable's scope and that of the function. However, when passing one or more arguments to a function, C allows the programmers to pass these arguments by value or by reference. By defualt, C programs pass arguments to functions by value: the values of the arguments are copied and then sent to the function; any changes to the arguments within the body of the function will not alter their orginal values (outside of the function in question). Despite this default setting, C programmers can just as easily modify their code to pass arguments by reference: the memory addresses of arguments (for example: int x, int y, and int z) are copied and sent then sent to the function (with the following parameter-list syntax: int *x, int *y, int *z); any changes to the arguments within the body of the function will directly alter the values of the variables in memory. 
+NOTE: In a C program, local variables of the same name as global variables will take precendence in the block of code in which they are used. 
+###Pass-by-Value
+As mentioned previously, the result of manipulating a variable's value within a function in a C program will depend on both the variable's scope and that of the function. However, when passing one or more arguments to a function, C allows the programmers to pass these arguments by value or by reference. By defualt, C programs pass arguments to functions by value: the values of the arguments are copied and then sent to the function; any changes to the arguments within the body of the function will not alter their orginal values (outside of the function in question). For example:
+```c
+void second_string(char s[]){
+	s = "\nworld";			// second_string()'s copy of s has the value "world"
+}					// main()'s copy of s has the value "hello"
+ 
+int main(void) {
+	char s[] = "\nhello";
+	second_string(s);		// the value of s is copied and sent to second_string()
+	printf("%s",s);			// Output: hello
+}
+```
+###Pass-by-Reference
+Despite this default setting, C programmers can just as easily modify their code to pass arguments by reference: the memory addresses of arguments (for example: int x, int y, and int z) are copied and sent then sent to the function (with the following parameter-list syntax: int *x, int *y, int *z); any changes to the arguments within the body of the function will directly alter the values of the variables in memory. 
 
 ###Variable Assignment
+
+
 
 ##Sources
 http://www.tutorialspoint.com/cprogramming/index.htm
