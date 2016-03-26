@@ -5,8 +5,7 @@
 
 #define rows 2
 #define cols 3
-int two_d_array[rows][cols] = {{1,2,3},
-							   {4,5,6}};
+int two_d_array[rows][cols] = {{1,2,3},{4,5,6}};
 
 void add(int,int);
 void count(int);
