@@ -155,7 +155,7 @@ As mentioned previously, the result of manipulating a variable's value within a 
 ```c
 void second_string(char s[]){
 	s = "\nworld";				// second_string()'s copy of s has the value "world"
-}							// main()'s copy of s has the value "hello"
+}								// main()'s copy of s has the value "hello"
  
 int main(void) {
 	char s[] = "\nhello";
