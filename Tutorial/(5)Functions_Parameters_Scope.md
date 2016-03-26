@@ -121,8 +121,8 @@ int multiply(int b){
 
 int main(void){
 	int a = 3;					// main()'s a is an integer of value 3 (so, a * 2 = 6)
-	printf("\na = %d", a);				// Output: a = 3
-	printf("\na * 2 = %d", multiply(a));		// Output: a * 2 = 12
+	printf("\na = %d", a);						// Output: a = 3
+	printf("\na * 2 = %d", multiply(a));				// Output: a * 2 = 12
 }
 ```
 The previous examples illustrate the fact that local variables x and a are declared and initialized in two separate instances (x = 2 and a = 3 in main(), x = 5 in the for-loop and a = 6 in multiply()). Therefore, variables x and a in main() are references to values stores in separate spaces in memory than variables x and a in the for-loop and in multiply().
