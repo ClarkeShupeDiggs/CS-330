@@ -4,7 +4,7 @@
 
 ###Syntax
 
-Functions in C are comprised of a function declaration (establishing the return type, name, and parameters of a function)   followed by its definition (containing the function's body of code).
+Functions in C are comprised of a function declaration (establishing the return type, name, and parameters of a function) followed by its definition (containing the function's body of code).
 
 ```c
 void add(int one, int two){     // <return type: void> <name: add>(parameters: int one, int two) <-- declaration
@@ -181,7 +181,7 @@ Another example of assign-by-value in C is as follows:
 int main(void) {
 	char string1[] = "cat";
 	char string2[] = "dog";		// string2[1] contains the value 'o'
-					// note: the library functions strcpy() is pass-by-reference
+	// note: the library function strcpy() is pass-by-reference
 	strcpy(string2,string1);		// string2[1] now contains the value 'a'
 	string2[1] = 'u';		// string2[1] now contains the value 'u'
 
