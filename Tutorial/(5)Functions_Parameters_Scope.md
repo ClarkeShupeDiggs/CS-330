@@ -67,7 +67,7 @@ void add(int one, int two){
 
 ###Recursion
 
-'''c
+```c
 void count(int c){
 	printf("%d",c);
 	printf(" ");
@@ -76,7 +76,7 @@ void count(int c){
 		count(c+1);
 	}
 }
-'''
+```
 
 ###Return Values
 
@@ -98,4 +98,5 @@ void count(int c){
 
 ###Sources
 http://www.tutorialspoint.com/cprogramming/index.htm
+
 http://www.cprogramming.com/tutorial/c/lesson16.html
