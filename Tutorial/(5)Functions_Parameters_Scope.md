@@ -19,7 +19,7 @@ void add(int one, int two){       // <return type: void> <name: add>(parameters:
 A C file that contains main() can implement one or more separate functions in two ways:
 
 ```c
-// Method 1 - Declare the function before main(), Define the function after main()
+// Method 1 - Declare the function before main(), define the function after main()
 
 void add(int,int);
 
@@ -35,6 +35,7 @@ The first method involves making a forward declaration in a C file, informing th
 
 ```c
 // Method 2 - Declare and define the function before main()
+
 void add(int one, int two){
 	int result = one + two;
 	printf("%d",result);
