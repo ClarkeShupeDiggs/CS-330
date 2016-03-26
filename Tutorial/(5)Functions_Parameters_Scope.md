@@ -67,7 +67,16 @@ void add(int one, int two){
 
 ###Recursion
 
-
+'''c
+void count(int c){
+	printf("%d",c);
+	printf(" ");
+	
+	if(c<5){
+		count(c+1);
+	}
+}
+'''
 
 ###Return Values
 
