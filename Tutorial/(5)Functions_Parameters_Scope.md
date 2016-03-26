@@ -79,7 +79,7 @@ void count(int c){
 ```
 
 ###Return Values
-
+Functions written in C may only return one value at a time. The data type of this value must match the return type of its associated function declaration. 
 ##Parameters
 
 ###Multiple Parameters, Multiple Datatypes
@@ -96,7 +96,6 @@ void count(int c){
 
 ###Variable Assignment
 
-###Sources
+##Sources
 http://www.tutorialspoint.com/cprogramming/index.htm
-
 http://www.cprogramming.com/tutorial/c/lesson16.html
