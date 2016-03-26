@@ -184,7 +184,7 @@ int main(void) {
 	char string2[] = "dog";			// string2[1] contains the value 'o'
 	// NOTE: the library function strcpy() is pass-by-reference
 	strcpy(string2,string1);		// string2[1] now contains the value 'a'
-	string2[1] = 'u';			// string2[1] now contains the value 'u'
+	string2[1] = 'u';				// string2[1] now contains the value 'u'
 
 	printf("%s",string2);			// Output: cut
 }
