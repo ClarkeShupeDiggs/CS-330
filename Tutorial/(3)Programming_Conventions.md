@@ -22,7 +22,7 @@ A symbol is comprised of one or more punctuation characters. Important syntax sy
 
 ## Data Types
 
-A complete variable declaration is comprised of, at the very least, a synactically correct identifer preceded by its data type. Basic data types include numeric integers (denoted as int, char, short, or long) and floating-point numbers (dentoted as float, double, or long double). In addition to enumerated and void types, there are also derived data types (pointer, array, structure, union, and function types).
+A complete variable declaration is comprised of, at the very least, a syntactically correct identifer preceded by its data type. Basic data types include numeric integers (denoted as int, char, short, or long) and floating-point numbers (dentoted as float, double, or long double). In addition to enumerated and void types, there are also derived data types (pointer, array, structure, union, and function types).
 
 Examples of valid variable declarations and their associated data types: 
 
