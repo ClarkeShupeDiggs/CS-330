@@ -167,8 +167,8 @@ int main(void) {
 Despite this default setting, C programmers can just as easily modify their code to pass arguments by reference: the memory addresses of arguments (for example: int x, int y, and int z) are copied and sent then sent to the function (with the following parameter-list syntax: int *x, int *y, int *z); any changes to the arguments within the body of the function will directly alter the values of the variables in memory. 
 
 ###Variable Assignment
-C 
-Variables in C programs, much like C functions, are (by default) assigned by value. For example, in the following code the variable a is initialized with one value, and then re-assigned with the value of a second variable b:
+
+Variables in C programs, much like functions, are (by default) assigned by value. For example, in the following code the variable a is initialized with one value, and then re-assigned with the value of a second variable b:
 ```c
 int a = 2;			// integer a contains the value 2
 int b = 5;
