@@ -168,7 +168,7 @@ Despite this default setting, C programmers can just as easily modify their code
 
 ###Variable Assignment
 
-Variables in C programs, much like functions, are (by default) assigned by value. For example, in the following code the variable a is initialized with one value, and then re-assigned with the value of a second variable b:
+Variables in C programs, much like functions, are (by default) assign-by-value. For example, in the following code the variable a is initialized with one value, and then re-assigned with the value of a second variable b:
 ```c
 int a = 2;			// integer a contains the value 2
 int b = 5;
