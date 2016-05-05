@@ -23,7 +23,7 @@ Regardless of which OS you are using, if you do not want to be restricted to pro
 
 C programs can range from the simple to the complex, but the basic requirements for every program are as follows:
  ```
- #include \<stdio.h\>
+ #include <stdio.h>
         /* This is an example of a comment */
         /* Comments are statements that will not be executed by the compiler */
         /* This line of code tells the compiler to include the standard C library 
